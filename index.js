@@ -15,9 +15,9 @@ async function getCountryApiElement(){
     const response = await fetch("https://tdumler74.github.io/fake-api2/country.json");
     const obj = await response.json();
     console.log(obj);    
-    const {name,language,population} =obj;
-    console.log(name,language,population);
-    countryApiElement.textContent = `${name}  ${language} ${population}`;
+    const {name,city,language,population} =obj;
+    console.log(name,city,language,population);
+    countryApiElement.textContent = `${name} ${city}  ${language} ${population}`;
 
 }       
 getCountryApiElement();
